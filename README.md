@@ -1,9 +1,10 @@
 # DNA-Mutation-Analyser
 Python tool to detect genetic mutations (substitutions, insertions, deletions) and analyze their impact on protein translation.
-## Description
+## Project Overview
 - **Project title :** Mutagenesis Analyzer / Sequence Alignment
-- **Idea :** Create a program for aligning two sequences DNA/Protein.
-1. Compare two sequences: a wild-type sequence versus a mutated sequence.
-2. Calculate the Levenshtein distance to identify mutations (substitutions, insertions, deletions).
-3. Identify the impact of a mutation on the final amino acid (**Silent** mutation versus **Missense** mutation).
+- **Goal :** Create a program for aligning two sequences DNA/Protein.
+## Key Features
+1. **Sequence Comparision:** Compare a wild-type sequence versus a mutated sequence.
+2. **Mutation Detection :** Calculate the **Levenshtein** distance to identify mutations (substitutions, insertions, deletions).
+3. **Biological Impact Analysis:** Determine the effect of a mutation on the final amino acid (**Silent** mutation versus **Missense** mutation).
 
