@@ -19,4 +19,14 @@ class DNASequence:
         valid_bases = {"A", "T", "C", "G"}
         invalid_bases = set(self.sequence) - valid_bases
         if invalid_bases:
-            raise ValueError(f"Invalid bases {invalid_bases} found in {self.name}.")
+            raise ValueError(f"Invalid bases {invalid_bases} found in {self.name}.")*
+    def translate(self) -> str:
+        protein = []
+        for i in range(0, len(self.sequence) - 2, 3):
+            codon = self.sequence[i : i + 3]
+            amino_acid = self.GENETIC_CODE.get(codon, "?")
+            if amino_acid == "*":
+                protein.append("*")
+                break
+            protein.append(amino_acid)
+        return "".join(protein)
